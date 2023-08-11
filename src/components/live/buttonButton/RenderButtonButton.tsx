@@ -16,7 +16,7 @@ export type RenderButtonProps = {
 export function RenderButton(props: RenderButtonProps) {
     const { frames = {}, ...restProps } = props;
     return (
-        <button {...frames["button"]} className={cls(frames,"button", `gap-0 flex-col relative border rounded bg-[#2758ce] opacity-100 px-3 py-1.5 border-[#2758ce] flex`)}>
+        <button {...frames["button"]} className={cls(frames,"button", `gap-0 flex-col relative border bg-[#2758ce] opacity-100 px-[50px] py-5 rounded-[51px] border-[#2758ce] flex`)}>
   <Span {...frames["title"]} className={cls(frames,"title", `font-['Inter'] text-lg font-semibold text-white text-left relative`)}>click me</Span>
 </button>
     );

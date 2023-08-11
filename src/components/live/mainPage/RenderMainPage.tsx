@@ -30,7 +30,7 @@ export function RenderMainPage(props: RenderMainPageProps) {
         <Div {...frames["mainPage"]} className={cls(frames,"mainPage", `gap-[15px] flex-col justify-center items-center overflow-hidden relative bg-[#e9ecf1] opacity-100 p-[85px] flex`)}>
   <Div {...frames["frame1"]} className={cls(frames,"frame1", `gap-3 flex-col items-center shrink-0 overflow-hidden relative border shadow-[0px_4px_4px_rgba(0,0,0,0.05000000074505806)] bg-white opacity-100 pt-[25px] pb-[17px] px-[21px] rounded-xl border-[#ebebeb] flex`)}>
     <Div {...frames["frame7"]} className={cls(frames,"frame7", `gap-2 flex-col items-center shrink-0 self-stretch object-cover relative opacity-100 p-0 flex`)}>
-      <Span {...frames["cuteDogPictureGenerator"]} className={cls(frames,"cuteDogPictureGenerator", `font-['Inter'] text-lg font-extrabold text-[#2f3136] text-left w-[271px] relative`)}>Cute Dog Picture Generator</Span>
+      <Span {...frames["cuteDogPictureGenerator"]} className={cls(frames,"cuteDogPictureGenerator", `font-['Inter'] text-2xl font-extrabold text-[#2f3136] text-center w-[271px] relative`)}>Cute Dog Picture Generator</Span>
     </Div>
     <Span {...frames["theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt"]} className={cls(frames,"theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt", `font-['Inter'] text-sm font-medium text-[#40454d] text-center w-[283px] relative`)}>The service allows you to generate a <Span className="font-bold">cute</Span> dog picture and download it!</Span>
     <Div {...frames["frame6"]} className={cls(frames,"frame6", `gap-[15px] flex-col items-stretch shrink-0 self-stretch object-cover relative opacity-100 p-0 flex`)}>
@@ -52,7 +52,7 @@ export function RenderMainPage(props: RenderMainPageProps) {
         </Div>
       </Div>
       <Div {...frames["frame5"]} className={cls(frames,"frame5", `gap-[30px] flex-row justify-center items-center shrink-0 self-stretch object-cover relative opacity-100 p-0 flex`)}>
-        <livedesign_button #button {...frames["downloadButton"]} className={cls(frames,"downloadButton", `gap-0 flex-col shrink-0 relative border rounded bg-[#2758ce] opacity-100 px-3 py-1.5 border-[#2758ce] flex`)} frameName="downloadButton" instanceName="Button #button">
+        <livedesign_button #button {...frames["downloadButton"]} className={cls(frames,"downloadButton", `gap-0 flex-col shrink-0 relative border bg-[#2758ce] opacity-100 px-[50px] py-5 rounded-[51px] border-[#2758ce] flex`)} frameName="downloadButton" instanceName="Button #button">
           <Span {...frames["title"]} className={cls(frames,"title", `font-['Inter'] text-lg font-semibold text-white text-left relative`)}>Download Image</Span>
         </livedesign_button>
       </Div>
