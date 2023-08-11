@@ -2,7 +2,7 @@
 // ~ auto-generated - do not edit ~
 import React from 'react';
 import { combine, cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgProps } from '../lib';
-import { Button, ButtonProps } from '../button/Button'
+import { MyButton, MyButtonProps } from '../myButton/MyButton'
 import { BadgeLiveDesign, BadgeLiveDesignProps } from '../badgeLiveDesign/BadgeLiveDesign'
 
 export type RenderMainPageProps = {
@@ -18,7 +18,7 @@ export type RenderMainPageProps = {
     ["icon"]?: SvgProps
     ["clickToGenerate"]?: SpanProps
     ["frame5"]?: DivProps
-    ["downloadButton"]?: ButtonProps["frames"];
+    ["downloadButton"]?: MyButtonProps["frames"];
     ["badgeLiveDesign"]?: BadgeLiveDesignProps["frames"];
 
   }
@@ -53,7 +53,7 @@ export function RenderMainPage(props: RenderMainPageProps) {
         </Div>
       </Div>
       <Div {...frames["frame5"]} className={cls(frames,"frame5", `gap-[30px] flex-row justify-center items-center shrink-0 self-stretch object-cover relative opacity-100 p-0 flex`)}>
-        <Button frames={combine({"button":{"className":"downloadButton shrink-0 flex"},"title":{"content":"Download Image"}}, frames["downloadButton"])} />
+        <MyButton frames={combine({"myButton":{"className":"downloadButton shrink-0 flex"},"title":{"content":"Download Image"}}, frames["downloadButton"])} />
       </Div>
     </Div>
   </Div>
