@@ -2,6 +2,7 @@
 // ~ auto-generated - do not edit ~
 import React from 'react';
 import { combine, cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgProps } from '../lib';
+import { Button, ButtonProps } from '../button/Button'
 import { BadgeLiveDesign, BadgeLiveDesignProps } from '../badgeLiveDesign/BadgeLiveDesign'
 
 export type RenderMainPageProps = {
@@ -17,7 +18,7 @@ export type RenderMainPageProps = {
     ["icon"]?: SvgProps
     ["clickToGenerate"]?: SpanProps
     ["frame5"]?: DivProps
-    ["downloadButton"]?: ButtonButtonProps["frames"];
+    ["downloadButton"]?: ButtonProps["frames"];
     ["badgeLiveDesign"]?: BadgeLiveDesignProps["frames"];
 
   }
@@ -52,9 +53,7 @@ export function RenderMainPage(props: RenderMainPageProps) {
         </Div>
       </Div>
       <Div {...frames["frame5"]} className={cls(frames,"frame5", `gap-[30px] flex-row justify-center items-center shrink-0 self-stretch object-cover relative opacity-100 p-0 flex`)}>
-        <livedesign_button #button {...frames["downloadButton"]} className={cls(frames,"downloadButton", `gap-0 flex-col shrink-0 relative border bg-[#2758ce] opacity-100 px-[50px] py-5 rounded-[51px] border-[#2758ce] flex`)} frameName="downloadButton" instanceName="Button #button">
-          <Span {...frames["title"]} className={cls(frames,"title", `font-['Inter'] text-lg font-semibold text-white text-left relative`)}>Download Image</Span>
-        </livedesign_button>
+        <Button frames={combine({"button":{"className":"downloadButton shrink-0 flex"},"title":{"content":"Download Image"}}, frames["downloadButton"])} />
       </Div>
     </Div>
   </Div>
